@@ -1,0 +1,57 @@
+package com.dream.spring6.iocxml.dimap;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @Author : huzejun
+ * @Date: 2023/2/5-18:18
+ */
+public class Student {
+
+    public List<Lesson> lessonList;
+
+    private Map<String,Teacher> teacherMap;
+
+    private String sid;
+
+    private String sname;
+
+    public void run() {
+        System.out.println("学生编号： " + sid + "学生名字：" + sname);
+        System.out.println(teacherMap);
+        System.out.println(lessonList);
+    }
+
+    public Map<String, Teacher> getTeacherMap() {
+        return teacherMap;
+    }
+
+    public void setTeacherMap(Map<String, Teacher> teacherMap) {
+        this.teacherMap = teacherMap;
+    }
+
+    public String getSid() {
+        return sid;
+    }
+
+    public void setSid(String sid) {
+        this.sid = sid;
+    }
+
+    public String getSname() {
+        return sname;
+    }
+
+    public void setSname(String sname) {
+        this.sname = sname;
+    }
+
+    public List<Lesson> getLessonList() {
+        return lessonList;
+    }
+
+    public void setLessonList(List<Lesson> lessonList) {
+        this.lessonList = lessonList;
+    }
+}
