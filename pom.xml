@@ -24,6 +24,7 @@
         <module>spring-first</module>
         <module>spring-ioc-xml</module>
         <module>spring6-ioc-annotation</module>
+        <module>spring6-reflect</module>
     </modules>
 
     <properties>
